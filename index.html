@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo2.png">
+</head>
+        <!-- for nav -->
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="logo2.png">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="animation.html">Game Controllar</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remote</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="menu.png"
+            onclick="togglemenu()">
+        </div>
+
+                <!-- contant -->
+        <div class="row">
+            <div class="col-1">
+                <h2>DualSense&trade; <br>Wireless Controller</h2>
+                <h3>Controller for playstation</h3>
+                <p>Discover a deeper gaming experience<sup>1</sup> with the innovative new PS5™ controller.
+                </p>
+                <h4>$32.50</h4>
+                <button class="buy-now" type="button">
+                  <a href="https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/" target="blank">Buy Now</a><img src="arrow.png" alt="">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="controller3.png" class="controllar">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="add.png" alt="">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+                <!-- social media links -->
+                <div class="social-links">
+                    <img src="fb.png" alt="">
+                    <img src="tw.png" alt="">
+                    <img src="ig.png" alt="">
+                </div>
+    </div>
+                <!-- Script for resonsive menubar -->
+
+    <script>
+        var menulist = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
